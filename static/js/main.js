@@ -2,16 +2,16 @@
 const subtitles = [
   {
     cn: "岚岚，不知道从哪一天开始，你就悄悄住进了我的心里。\
-        在喜欢上你之前，我也遇到过更漂亮的女孩，也遇到过更聪慧的女孩，\
+        在喜欢上你之前，我遇到过更漂亮的女孩，也遇到过更聪慧的女孩，\
         可那些都不是你。"
   },
   {
     cn: "说来也奇怪，从我们相识，到后来渐渐熟悉，\
-        我印象最深的，反而不是你精致的一面，而是那个有点狼狈的你——\
-        是夏天刚从温室里出来，身上还带着些泥土的你；\
+        我印象最深的，不是你最精致的一面，而是那个有点狼狈的你——\
+        是夏天刚从温室里出来，身上还带着些汗水和泥土的你；\
         是早上赶实验，来不及梳头的你；\
-        是忙碌了一整天，脸上挂着疲倦的表情的你。\
-        可我偏偏就喜欢这样的你，认真、真诚，又一点点笨拙地可爱。"
+        是忙碌了一整天，脸上挂着疲倦的神情的你。\
+        可我偏偏就喜欢这样的你，真实、认真而又真诚。"
   },
   {
     cn: "也许是在那次打麻将的时候开始，\
@@ -23,13 +23,13 @@ const subtitles = [
   },
   {
     cn: "岚岚,我没有太多惊天动地的情话，\
-        但我想做那个，让你安心、也能为你兜底的人。\
+        但我想做那个，让你安心、信任也能时刻为你兜底的人。\
         我可能不能每天让你笑，但我一定不让你掉泪；\
         相处中很多事情难免会产生矛盾，\
         但是不论你错，还是我错，我都会先说对不起；\
         我不敢轻易说天长地久，那样觉得太轻浮，\
-        但是我只希望，能有一个机会，让我靠近你一点点，\
-        让我们，彼此多了解一点。"
+        但是我只希望，我们能有一个机会，让我们再靠近一点，\
+        让我们，彼此再多了解一点。"
   }
 ];
 
@@ -48,7 +48,7 @@ function typeLine(text, callback) {
     if (i > text.length) {
       clearInterval(interval);
       line.innerHTML = text; // 显示完整文字
-      setTimeout(callback, 1200); // 段落之间延迟
+      setTimeout(callback, 1000); // 段落之间延迟
     }
   }, 100); // 打字速度
 }
@@ -74,11 +74,11 @@ for (let i = 0; i < rainCount; i++) {
 
     // 随机位置、大小、角度、速度
     const left = Math.random() * 100; // 百分比位置
-    const height = 5 + Math.random() * 15; // vh
-    const width = 1 + Math.random() * 2; // px
-    const angle = 15 - Math.random() * -10; // -10~-20度
-    const duration = 2 + Math.random() * 2; // 秒
-    const delay = Math.random() * 2; // 秒
+    const height = 2 + Math.random() * 10; // vh
+    const width = 0.5 + Math.random() * 2; // px
+    const angle = 10 - Math.random() * -10; // -10~-20度
+    const duration = 3 + Math.random() * 2; // 秒
+    const delay = Math.random() * 7; // 秒
 
     // 应用随机属性
     rain.style.left = `${left}%`;
@@ -99,3 +99,4 @@ button.addEventListener('click', () => {
     video.play();
     button.style.display = 'none';
 });
+
