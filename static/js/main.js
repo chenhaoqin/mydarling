@@ -101,3 +101,12 @@ for (let i = 0; i < rainCount; i++) {
     //button.style.display = 'none';
 //});
 
+window.addEventListener('load', () => {
+    const bgMusic = document.getElementById('bgMusic');
+
+    // 等待音频元数据加载完毕后再设置播放时间
+    bgMusic.addEventListener('loadedmetadata', () => {
+        bgMusic.currentTime = 49; // 从第15秒开始
+        bgMusic.play(); // 自动播放
+    });
+});
