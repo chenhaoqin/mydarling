@@ -92,11 +92,12 @@ for (let i = 0; i < rainCount; i++) {
 }
 
 // ====== 背景音乐控制 ======
-const video = document.getElementById('bgMusic');
-const button = document.getElementById('playButton');
+//const video = document.getElementById('bgMusic');
+//const button = document.getElementById('playButton');
 
-button.addEventListener('click', () => {
-    video.currentTime = 49;
-    video.play();
-    button.style.display = 'none';
-});
+//button.addEventListener('click', () => {
+    //video.currentTime = 49;
+    //video.play();
+    //button.style.display = 'none';
+//});
+
