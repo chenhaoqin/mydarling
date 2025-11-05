@@ -6,7 +6,7 @@
     <!-- 引入 CSS -->
     <link rel="stylesheet" href="/mydarling/static/css/style.css" />
     <link rel="stylesheet" href="/mydarling/static/css/picture.css" />
-    <!--<link rel="stylesheet" href="/mydarling/static/css/music.css" />-->
+    <link rel="stylesheet" href="/mydarling/static/css/music.css" />
     <link rel="stylesheet" href="/mydarling/static/css/word.css" />
     <link rel="stylesheet" href="/mydarling/static/css/rain.css" />
     <link rel="stylesheet" href="/mydarling/static/css/background.css" />
@@ -14,7 +14,7 @@
 <body>
     <!-- 背景音乐 -->
     <audio id="bgMusic" src="/mydarling/static/music/你陪我做过的梦.mp3" loop></audio>
-    <!--<button id="playButton"></button>-->
+    <button id="playButton"></button>
 
     <!-- 字幕盒子 -->
     <div class="subtitle-box" id="subtitleBox"></div>
@@ -45,16 +45,5 @@
 
     <!-- 引入 JS -->
     <script src="/mydarling/static/js/main.js"></script>
-<script>
-window.addEventListener('load', () => {
-    const bgMusic = document.getElementById('bgMusic');
-
-    // 等待音频元数据加载完毕后再设置播放时间
-    bgMusic.addEventListener('loadedmetadata', () => {
-        bgMusic.currentTime = 49; // 从第15秒开始
-        bgMusic.play(); // 自动播放
-    });
-});
-</script>
 </body>
 </html>
