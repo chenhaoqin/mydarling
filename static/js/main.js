@@ -94,9 +94,10 @@ const video = document.getElementById('bgMusic');
 const button = document.getElementById('playButton');
 
 button.addEventListener('click', () => {
-    video.currentTime = 49;
+    video.currentTime = 48;
     video.play();
     button.style.display = 'none';
     showSubtitle();
 });
+
 
