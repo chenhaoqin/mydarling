@@ -62,8 +62,6 @@ function showSubtitle() {
   });
 }
 
-setTimeout(showSubtitle, 2500);
-
 // ====== 流星雨效果 ======
 const rainWrap = document.getElementById('rain');
 const rainCount = 150; // 流星数量，可自行调节
@@ -99,4 +97,6 @@ button.addEventListener('click', () => {
     video.currentTime = 49;
     video.play();
     button.style.display = 'none';
+    showSubtitle();
 });
+
